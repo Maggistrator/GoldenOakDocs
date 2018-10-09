@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Entity</TITLE>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    </HEAD> 
+    <body bgcolor="#FEEFA9">
+        
+    <!--Стандартный хэдер-->
+    <img src="oak.png" align="left" width=50 hspace=10>
+        <b><font face='Comic Sans MS' size=5 color = "orange">Golden Oak Library</font></b>
+        <br>
+        <font face='Courier New' size=2>Неофициальное руководство по Slick2D и MarteEngine</font>
+        <br>
+    <hr>
+    <!------------------------------------------------------------------------------------------>
+    
+    <font face='Courier New' size=4>Entity.java</font>
+    <br>
+    <br>
+    <b>Описание:</b><br>
+        <img src="Player.png" align="left">
+        <font face='Comic Sans MS' size=2>
+            Один из фундаментальных классов, которые делают MarteEngine хорошим дополнением к Slick2D.
+            <br>Entity - это игровая сущность. Человек, дерево, враг, и даже текст/элементы UI, если того пожелает разработчик - уровень абстракции Entity это позволяет. Этот класс очень тесно связан с <a href="">World</a>, и обладает встроенным обнаружением столкновений, механизмом поддержки анимаций, и другими полезными функциями. Пример кода можно посмотреть в <a href="">тестовом проекте</a>.
+        </font>    
+    <br>        
+    <br>    
+    <table cols="2" border="1" width=100%>
+        <caption align="left">
+            <b>Поля</b>
+        </caption>
+        <tr align="left">
+            <th> 
+                <font color="gray">public static final String </font>SOLID
+            </th>
+            <td>
+                Первый из двух заранее предусмотренных типов
+            </td>
+        </tr>
+        <tr align="left">
+            <th>
+                <font color="gray">public static final String</font> PLAYER   
+            </th>
+            <td>
+                Второй из двух заранее предусмотренных типов 
+            </td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public World</font> world
+            </th>
+            <td>Мир(World), в котором живёт сущность</td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public String</font> name
+            </th>
+            <td>Уникальный идентификатор сущности</td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public String</font> name
+            </th>
+            <td>Уникальное имя сущности</td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public boolean</font> centered
+            </th>
+            <td>Флаг, сигнализирующий о перемещении центра сущности из левого верхнего угла в настоящий центр</td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public int </font> width
+            </th>
+            <td>Ширина сущности, и по-совместительству ширина хитбокса</td>
+        </tr>
+        <tr align="left">
+            <th>
+            <font color="gray">public int </font> height
+            </th>
+            <td>Ширина сущности, и по-совместительству ширина хитбокса</td>
+        </tr>
+    </table>
+    
+    <br>
+    <!-- Это стандартный футер -->
+    <b><a href="index.html">На главную</a></b>
+        <hr>
+        <i>
+            Студент: Левихин Денис<br>
+            Группа: 560<br>
+            2018г
+        </i>
+    </body>        
+</HTML>        

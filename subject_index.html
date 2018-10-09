@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Список важнейших классов</TITLE>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    </HEAD>
+    <body bgcolor="#FEEFA9">
+        <font face = CourierNew,ComicSans color=ORANGE>
+            <h2>Список важных классов движка Slick2d</h2>
+        </font>
+        <UL type="square">
+            <li><b><a href="#basicgame">BasicGame</a></b></li>
+            <li><b><a href="#statebasedgame">StateBasedGame</a></b></li>
+            <li><b><a href="#basicgamestate">BasicGameState</a></b></li>
+            <li>GameContainer</li>
+        </UL>
+        <br>
+        <DL>
+            <DT><b><a name="basicgame">BasicGame</a></b></DT>
+            <DD>
+                Простой самодостаточный класс-контейнер.<br>  
+                Состоит из 3-х основных методов - <b>init</b>, <b>render</b> и <b>update</b>.
+                Эта архитектура подходит только для самых простых игр, а потому используется в основном новичками, или для очень небольших проектов.
+            </DD>
+            <br>
+            <DT><b><a name="statebasedgame">StateBasedGame</a></b></DT>
+            <DD>
+                Заготовка для полноценной игры основанной на <b>сценах</b> <i>(классах состояний)</i>.<br>  
+                В нем может быть неограниченное число сцен, между которыми можно неограниченно перемещаться. Каждая сцена представляет собой аналог BasicGame, и называется <a href="#basicgamestate">BasicGameState</a>.
+            </DD>
+            <br>
+            <DT><b><a name="basicgamestate">BasicGameState</a></b></DT>
+            <DD>
+                Отдельная сцена для <a href="statebasedgame">BasicGameState</a>.
+            </DD>
+        </DL>
+        <b><a href="index.html">На главную</a></b>
+        <hr>
+        <br>
+        <i>
+            Студент: Левихин Денис<br>
+            Группа: 560<br>
+            2018г
+        </i>
+    </body>
+</HTML>
