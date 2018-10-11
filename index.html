@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <HTML>
+    
+    <!--TODO: сделать поиск по сайту, для быстрой работы со страницами документации-->
+    <!--TODO: завезди адаптивность - размер контента 80%, выравнивание - центр-->
+    <!--TODO: когда завезут css, прикрепить футер к нижней части экрана, а хедер - к верхней, со скроллом контент будет двигаться, а эти два блока - нет-->
+    <!--TODO: когда завезут css, добавить в хэдер в <a> строку: style="text-decoration: none;" -->
+    <!--TODO: присоединить этот сайт к своему форку MarteEngine, через github.io, когда он будет более-менее готов-->
+    
     <head>
         <TITLE>Неофициальное руководство по Slick2D и MarteEngine</TITLE>
         <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <meta name="description" content="Slick2D && MarteEngine Tutorials">
+        <meta name="keywords" content="gamedev, разработка игр, MarteEngine, Slick2d">
     </head>
+    
     <body link="orange" alink="#F43D6B" vlink="#FF9640" bgcolor="#FEEFA9">
-            <!--FF7400-->
-                <h2>Неофициальное руководство по Slick2d и MarteEngine</h2>
-            <hr>
-            <p>
-                <font face = 'Comic Sans MS' color=orange size=3>Slic2D</font>- это двумерный игровой движок на языке программирования Java, основной особенностью которого является поддержка OpenGL на базе LWJGL.
-                <br>
-                <font face = 'Comic Sans MS' color=orange size=3 shade=2>MarteEngine</font> - это свободнораспространяемая библиотека игровых функций, написанная поверх Slick2d.
-            </p>
-        <OL>
+        
+    <!--Стандартный хэдер-->
+    <a href="index.html"><img src="/../res/oak.png" align="left" width=50 hspace=10 alt="Oak.png">
+        <b><font face='Comic Sans MS' size=5 color = "orange">Golden Oak Library</font></b></a>
+        <br>
+        <font face='Courier New' size=2>Неофициальное руководство по Slick2D и MarteEngine</font>
+        <br>
+        <hr>
+    <!--------------------->
+        
+        <br>
+        <div align=center>
+            <img src="/../res/herb.jpg" width=100 hspace=5 alt="MagicBook.png">
+            <br>
+            <b>Доброго времени суток</b>, случайный читатель! <br>
+            Заходи, и присаживайся. Эта библиотека хранит записи об одном <b>старом движке</b>, и <b>самописной библиотеке</b> игровых сущностей, на которых, при должном опыте, всё ещё можно что-нибуть написать. Походи, посмотри что на полках, и если понравится - возвращайся, чай подаётся в 4 pm. Все книги можно снимать с полок и смотреть, а кое-какие даже дописывать.
+            <br>
+            <br>
+            <hr width=40% size=5>
+        </div>
+        <br>
+        <!--Уникальные страницы-->
+        <UL>
             <caption><font face = 'Courier New' size=4><b>Навигация:</b></font></caption>
-            <li><b><a href="subject_index.html">Предметный указатель</a></b></li>
+            <li><b><a href="dictionary.html">Словарь терминов движка</a></b></li>
             <li><b><a href="links.html">Полезные ссылки</a></b></li>
-        </OL>   
+        </UL> 
+
+        <UL>
+            <caption><font face = 'Courier New' size=4><b>Документация:</b></font></caption>
+            <li>
+                <b>Основное</b>
+                <ul>
+                    <li><a href="/classes/Entity.html">Entity</a></li>
+                </ul>
+            </li>
+        </UL>
+        <br>
+        
+        <!--div style="padding-left: 20px"  Раскомментить, когда css разрешат-->
+        <div> 
+        <b><font face = 'Comic Sans MS' size=4>Краткая информация:</font></b>
+        <br>
+        <!--Немножко о движке-->   
+        <div>
+            <img src="/../res/logo.png" align="left" hspace=5 vspace=7 width=50>
+            <font face = 'Comic Sans MS' color=orange size=3></font>- это двумерный игровой движок на языке программирования Java, основной особенностью которого является поддержка OpenGL на базе LWJGL.
+            <br>
+            <br>
+        </div>    
+            
+        <!--О библиотеке-->  
+        <div>
+            <img src="/../res/octocat.png" align="left" hspace=28 width=40>
+            <font face = 'Comic Sans MS' color=orange size=3 shade=2>MarteEngine</font> - это свободно-распространяемая библиотека игровых функций с GitHub, написанная специально для Slick2d. Она предоставляет классы сущностей, обнаружение столкновений, улучшенную систему загрузки ресурсов, и многое другое. 
+        </div>
+        </div>
+        <br>
+        <!---Стандартный футер--->
         <div >
             <hr>   
-            <br>
             <b>OldTeaOwl</b>, 2018<br>
             <a href="https://github.com/Gornova/MarteEngine">MarteEngine</a> by <a href="https://github.com/Gornova">Gornova</a> and <a href="http://slick.ninjacave.com/">Slick2d</a> by Slick Community
-        </div>    
+        </div>
+        <!----------------------->
     </body>
 </HTML>
