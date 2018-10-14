@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<HTML>
+    
+    <HEAD>
+        <TITLE>Entity</TITLE>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <meta name="description" content="MarteEngine library World class">
+        <meta name="keywords" content="gamedev, разработка игр, MarteEngine, Slick2d">
+    </HEAD> 
+    
+    <body bgcolor="#FEEFA9">
+        
+    <!--Стандартный хэдер-->
+    <a href="/index.html"><img src="/../res/oak.png" align="left" width=50 hspace=10 alt="Oak.png">
+        <b><font face='Comic Sans MS' size=5 color = "orange">Golden Oak Library</font></b></a>
+        <br>
+        <font face='Courier New' size=2>Неофициальное руководство по Slick2D и MarteEngine</font>
+        <br>
+    <hr>
+    <!------------------------------------------------------------------------------------------>
+
+        <!----------Боковое меню----------->    
+   <table width="100%" cellspacing="0" cellpadding="5" >
+   <tr> 
+       <td width="140" valign="top" bgcolor=#FFDA88><!--#FFD683-->   
+            <font face = 'Comic Sans MS' size=4><b>Документация:</b></font>
+            <hr width = 90%>
+               <UL margin-left: 20px;>
+                   <li><b><a href="/index.html"><font color = #FF7220> На главную</font></a></b></li>
+                    <li>
+                        <b>Basic</b>
+                        <ul>
+                            <li><a href="/classes/Entity.html">Entity</a></li>
+                            <li><a href="World.html">World</a></li>
+                            <li>SimpleCamera</li>
+                            <li>StateBasedGame</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Advanced</b>
+                        <ul>
+                            <li>AnimatedEntity</li>
+                            <li>AliveEntity</li>
+                            <li>PoligonalEntity</li>
+                            <li>Camera</li>
+                            <li>Alarm</li>
+                            <li>ParticleEmitter</li>
+                            <li>ParticleSystem</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Tutorial</b>
+                        <ul>
+                            <li>Часть I</li>
+                            <li>Часть II</li>
+                            <li>Тайловые карты</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Дополнительно</b>
+                        <ul>
+                            <li><a href="/articles/faq.html">FAQ</a></li>
+                            <li><a href="/articles/download.html">Скачать</a></li>
+                        </ul>
+                    </li>
+                </UL>
+           </td>
+            <!--------------------->
+        
+
+            <!---------Блок с контентом------------>
+           <td valign="top">
+        <div>
+            <div align="left" width = "80%" border-left="40px">
+                <a href="https://github.com/Maggistrator/MarteEngine/blob/master/src/main/java/it/marteEngine/World.java">
+                <font face='Courier New' size=4>World.java</font></a>
+                <br>
+                <br>
+                    <img src="/../res/factorio.jpg" align="left" hspace=5 width=120>
+                <font face='Comic Sans MS' size=4>
+                    <b>Описание:</b>
+                </font>
+                    <font face='Comic Sans MS' size=2>
+                        <br><b>it.marteEngine.World</b> - это мир, в котором действуют сущности (<a href="Entity.html">Entity</a>).<br>
+                        В этом классе реализуются механизмы,общие для любых(или почти любых) игровых локаций.
+                        Архитектура World повторяет BasicGameState из Slick2D, но входит в тесную структуру MarteEngine, и это удобно. 
+                    </font>    
+                <br>        
+                <br>    
+
+        <!--Тут начинается таблица-->        
+                <table cols="2" border="1" width=100%>
+                    <caption align="left">
+                        <b>Поля</b>
+                    </caption>
+                    <tr align="left">
+                        <th> 
+                            <font color="gray">public static final int </font>BELOW
+                        </th>
+                        <td>
+                            Логический уровень сущности - <b>"под игровым миром"</b>.
+                            <br>Это в первую очередь нужно обнаружению столкновений, например - чтобы игрок был логически разделён с задним фоном. 
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <th> 
+                            <font color="gray">public static final int </font>GAME
+                        </th>
+                        <td>
+                            Логический уровень сущности <b>"в игре"</b>.
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <th> 
+                            <font color="gray">public static final int </font>ABOVE
+                        </th>
+                        <td>
+                            Логический уровень сущности: <b>"над игрой"</b>. Нужно чтобы игрок, например, не упирался в элементы интерфейса.
+                            <br>Пример использования: <font color=gray><b>this.add(telescope, World.GAME);</b></font>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>     
+            </td>
+        <!--------------------->
+       
+        <!--Как пользоваться, примеры-->
+        <!-- ....... -->
+        <!--------------------->
+       
+        </tr>
+        </table>
+               
+        <br>        
+        <br>
+        <!---Стандартный футер--->
+        <div align=>
+            <hr>   
+            <b>OldTeaOwl</b>, 2018<br>
+            <a href="https://github.com/Gornova/MarteEngine">MarteEngine</a> by <a href="https://github.com/Gornova">Gornova</a> and <a href="http://slick.ninjacave.com/">Slick2d</a> by Slick Community
+        </div>
+        <!----------------------->
+    </body>        
+</HTML>        

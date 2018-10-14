@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <TITLE>Неофициальное руководство по Slick2D и MarteEngine</TITLE>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <meta name="description" content="Slick2D && MarteEngine Tutorials">
+        <meta name="keywords" content="gamedev, разработка игр, MarteEngine, Slick2d">
+    </head>
+    
+    <body link="orange" alink="#F43D6B" vlink="#FF7220" bgcolor="#FEEFA9">    
+        
+        <!--Стандартный хэдер-->
+        <a href="index.html"><img src="/../res/oak.png" align="left" width=50 hspace=10 alt="Oak.png">
+        <b><font face='Comic Sans MS' size=5 color = "orange">Golden Oak Library</font></b></a>
+        <br>
+        <font face='Courier New' size=2>Неофициальное руководство по Slick2D и MarteEngine</font>
+        <br>
+        <hr>
+        <!--------------------->
+
+        <!----------Боковое меню----------->    
+   <table width="100%" cellspacing="5" cellpadding="5" >
+   <tr> 
+       <td width="140" valign="top" bgcolor=#FFDA88><!--#FFD683-->   
+            <font face = 'Comic Sans MS' size=4><b>Документация:</b></font>
+            <hr width = 90%>
+               <UL margin-left: 20px;>
+                   <li><b><a href="/index.html"><font color = #FF7220> На главную</font></a></b></li>
+                    <li>
+                        <b>Basic</b>
+                        <ul>
+                            <li><a href="/classes/Entity.html">Entity</a></li>
+                            <li><a href="/classes/World.html">World</a></li>
+                            <li>SimpleCamera</li>
+                            <li>StateBasedGame</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Advanced</b>
+                        <ul>
+                            <li>AnimatedEntity</li>
+                            <li>AliveEntity</li>
+                            <li>PoligonalEntity</li>
+                            <li>Camera</li>
+                            <li>Alarm</li>
+                            <li>ParticleEmitter</li>
+                            <li>ParticleSystem</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Tutorial</b>
+                        <ul>
+                            <li>Часть I</li>
+                            <li>Часть II</li>
+                            <li>Тайловые карты</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Дополнительно</b>
+                        <ul>
+                            <li><a href="/articles/faq.html">FAQ</a></li>
+                            <li><a href="/articles/download.html">Скачать</a></li>
+                        </ul>
+                    </li>
+                </UL>
+           </td>
+            <!--------------------->
+        
+       
+        <!---------Блок с контентом------------>
+       <td valign="top">
+        <font size=5 face="Comic Sans MS"><b>FAQ</b></font>
+        <br><font size=1 face="Comic Sans MS" color="#FD88">[Если кто-то разлил свой кофе на страницы, или изначально в старом движке нашлись давно прогрызенные мышами дырки, в этом отделе всё подлатают]</font>
+
+        <ul>
+            <li>
+                
+        <font size=3 face="Comic Sans MS"><b>В Slick2d нет русского языка! Что делать?</b></font>
+                <br><font size=2 face="Comic Sans MS">> Это так, и официального фикса нет. Но решение всё же есть, можно использовать слебующий способ:</font>
+        <font face = "Courier New">
+                <div>
+                    
+ <!-------------------тут код начинается----------------------->   
+               <pre>
+Font font = new Font("Courier New", Font.PLAIN, 16);
+TrueTypeFont slicFont = new TrueTypeFont(font, true("йцукенгшщзхъфывапролджэячсмитьбюё".toUpperCase() + "йцукенгшщзхъфывапролджэячсмитьбюё").toCharArray());
+
+@Override
+public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException {
+    if(!g.getFont().equals(slicFont)) {
+        g.setFont(slicFont);
+    }
+}             
+                </pre>
+ <!-------------------тут он заканчивается-----------------------> 
+                    
+                </div>
+        </font>
+            </li> 
+        </ul>
+        
+</td>
+        <!--------------------->
+       
+   </tr>
+  </table>
+        
+        <br>
+        <!---Стандартный футер--->
+        <footer>
+            <hr>   
+            <b>OldTeaOwl</b>, 2018<br>
+            <a href="https://github.com/Gornova/MarteEngine">MarteEngine</a> by <a href="https://github.com/Gornova">Gornova</a> and <a href="http://slick.ninjacave.com/">Slick2d</a> by Slick Community
+        </footer>
+        <!----------------------->
+    </body>
+</HTML>      

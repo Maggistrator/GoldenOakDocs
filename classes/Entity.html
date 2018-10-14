@@ -18,99 +18,153 @@
         <br>
     <hr>
     <!------------------------------------------------------------------------------------------>
-    
-    <!--Жалкая попытка в адаптивность. Эти div должны были сжимать, и выравнивать содержимое по центру-->
-    <div align="center">
-        <div align="left" width = "80%" border-left="40px">
-            <a href="https://github.com/Gornova/MarteEngine/blob/master/src/main/java/it/marteEngine/entity/Entity.java">
+
+        <!----------Боковое меню----------->    
+   <table width="100%" cellspacing="0" cellpadding="5" >
+   <tr> 
+       <td width="140" valign="top" bgcolor=#FFDA88><!--#FFD683-->   
+            <font face = 'Comic Sans MS' size=4><b>Документация:</b></font>
+            <hr width = 90%>
+               <UL margin-left: 20px;>
+                   <li><b><a href="/index.html"><font color = #FF7220> На главную</font></a></b></li>
+                    <li>
+                        <b>Basic</b>
+                        <ul>
+                            <li><a href="/classes/Entity.html">Entity</a></li>
+                            <li><a href="World.html">World</a></li>
+                            <li>SimpleCamera</li>
+                            <li>StateBasedGame</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Advanced</b>
+                        <ul>
+                            <li>AnimatedEntity</li>
+                            <li>AliveEntity</li>
+                            <li>PoligonalEntity</li>
+                            <li>Camera</li>
+                            <li>Alarm</li>
+                            <li>ParticleEmitter</li>
+                            <li>ParticleSystem</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Tutorial</b>
+                        <ul>
+                            <li>Часть I</li>
+                            <li>Часть II</li>
+                            <li>Тайловые карты</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Дополнительно</b>
+                        <ul>
+                            <li><a href="/articles/faq.html">FAQ</a></li>
+                            <li><a href="/articles/download.html">Скачать</a></li>
+                        </ul>
+                    </li>
+                </UL>
+           </td>
+            <!--------------------->
+        
+
+            <!---------Блок с контентом------------>
+           <td valign="top">
+        <div>
+            <div align="left" width = "80%" border-left="40px">
+                <a href="https://github.com/Gornova/MarteEngine/blob/master/src/main/java/it/marteEngine/entity/Entity.java">
                 <font face='Courier New' size=4>Entity.java</font></a>
-            <br>
-            <br>
-            <!--Краткое описание------------>
-            <b>Описание:</b><br>
-                <img src="/../res/MagicBook.png" align="left" hspace=5 width=120>
-                <font face='Comic Sans MS' size=2>
-                    <font color="#EE7862" size=3><u><b>Кратко:</b></u><br></font>
-                    Один из тех классов, которые делают <b>MarteEngine</b> столь удачным дополнением к <b>Slick2D</b>;
-                    <br><b>Entity</b> - это игровая сущность. <i>Человек, дерево, стена</i>, и даже <u>текст/элементы UI</u>, если того пожелает разработчик - уровень абстракции Entity это позволяет. Этот класс очень тесно связан с <a href="">World</a>, и обладает встроенным обнаружением столкновений, механизмом поддержки анимаций, и другими полезными функциями.
+                <br>
+                <br>
+                    <img src="/../res/MagicBook.png" align="left" hspace=5 width=120>
+                <font face='Comic Sans MS' size=4>
+                    <b>Описание:</b>
+                </font>
+                    <font face='Comic Sans MS' size=2>
+                        <br><b>it.marteEngine.entity</b> - это игровая сущность;
+                        <br><i>Человек, дерево, стена</i>, и даже <u>текст/элементы UI</u>, если того пожелает разработчик. Он сразу же поддерживает всё необходимое - анимации, базовое обнаружение столкновений, и активно взаимодействует с миром (World), что существенно облегчает работу.
+                    </font>    
+                <br>        
+                <br>    
 
-                    <!--Подробное------------>
-                    <br><br><font color="#007536" size=3><u><b>Подробно:</b></u><br></font>
-                    Entity - это первый класс в цепочке наследования сущностей
-                    <br>Пример кода можно посмотреть в <a href="">тестовом проекте</a>.
-                    
-                </font>    
-            <br>        
-            <br>    
-            
-    <!--Тут начинается таблица-->        
-            <table cols="2" border="1" width=100%>
-                <caption align="left">
-                    <b>Поля</b>
-                </caption>
-                <tr align="left">
-                    <th> 
-                        <font color="gray">public static final String </font>SOLID
-                    </th>
-                    <td>
-                        Первый из двух заранее предусмотренных типов
-                    </td>
-                </tr>
-                <tr align="left">
-                    <th>
-                        <font color="gray">public static final String</font> PLAYER   
-                    </th>
-                    <td>
-                        Второй из двух заранее предусмотренных типов 
-                    </td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public World</font> world
-                    </th>
-                    <td>Мир(World), в котором живёт сущность</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public String</font> name
-                    </th>
-                    <td>Уникальный идентификатор сущности</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public String</font> name
-                    </th>
-                    <td>Уникальное имя сущности</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public boolean</font> centered
-                    </th>
-                    <td>Флаг, сигнализирующий о перемещении центра сущности из левого верхнего угла в настоящий центр</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public int </font> width
-                    </th>
-                    <td>Ширина сущности, и по-совместительству ширина хитбокса</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public int </font> height
-                    </th>
-                    <td>Высота сущности (и высота хитбокса соответственно)</td>
-                </tr>
-                <tr align="left">
-                    <th>
-                    <font color="gray">public int </font> height
-                    </th>
-                    <td>Ширина сущности, и по-совместительству ширина хитбокса</td>
-                </tr>
+        <!--Тут начинается таблица-->        
+                <table cols="2" border="1" width=100%>
+                    <caption align="left">
+                        <b>Поля</b>
+                    </caption>
+                    <tr align="left">
+                        <th> 
+                            <font color="gray">public static final String </font>SOLID
+                        </th>
+                        <td>
+                            Первый из двух заранее предусмотренных типов
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                            <font color="gray">public static final String</font> PLAYER   
+                        </th>
+                        <td>
+                            Второй из двух заранее предусмотренных типов 
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public World</font> world
+                        </th>
+                        <td>Мир(World), в котором живёт сущность</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public String</font> name
+                        </th>
+                        <td>Уникальное имя сущности</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public boolean</font> centered
+                        </th>
+                        <td>Флаг, сигнализирующий о перемещении центра сущности из левого верхнего угла в настоящий центр</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public int </font> width
+                        </th>
+                        <td>Ширина сущности, и по-совместительству ширина хитбокса</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public int </font> height
+                        </th>
+                        <td>Высота сущности (и высота хитбокса соответственно)</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public float </font> x
+                        </th>
+                        <td>Координата сущности по горизонтали [от левого верхнего угла, или от центра, если флаг <b>centered</b> установлен в <b>true</b>]</td>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                        <font color="gray">public float </font> y
+                        </th>
+                        <td>Координата сущности по вертикали [с теми же условиями, что и <b>x</b>]</td>
+                    </tr>
 
-            </table>
-        </div>
-    </div>     
-                
+                </table>
+            </div>
+        </div>     
+            </td>
+        <!--------------------->
+       
+        <!--Как пользоваться, примеры-->
+        <!-- ....... -->
+        <!--------------------->
+       
+        </tr>
+        </table>
+               
         <br>        
         <br>
         <!---Стандартный футер--->
