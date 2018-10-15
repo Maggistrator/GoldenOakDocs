@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <HTML>
+    
     <HEAD>
-        <TITLE>Словарь терминов</TITLE>
+        <TITLE>Entity</TITLE>
         <meta http-equiv="content-type" content="text/html" charset="utf-8">
-    </HEAD>
+        <meta name="description" content="MarteEngine library StateBasedGame class">
+        <meta name="keywords" content="gamedev, разработка игр, MarteEngine, Slick2d">
+    </HEAD> 
+    
     <body bgcolor="#FEEFA9">
         
     <!--Стандартный хэдер-->
@@ -14,7 +18,7 @@
         <br>
     <hr>
     <!------------------------------------------------------------------------------------------>
-        
+
         <!----------Боковое меню----------->    
    <table width="100%" cellspacing="0" cellpadding="5" >
    <tr> 
@@ -27,9 +31,9 @@
                         <b>Basic</b>
                         <ul>
                             <li><a href="/classes/Entity.html">Entity</a></li>
-                            <li><a href="classes/World.html">World</a></li>
-                            <li><a href="/classes/simple_camera.html">SimpleCamera</a></li>
-                            <li><a href="/classes/StateBasedGame.html">StateBasedGame</a></li>
+                            <li><a href="World.html">World</a></li>
+                            <li><a href="simple_camera.html">SimpleCamera</a></li>
+                            <li><a href="StateBasedGame.html">StateBasedGame</a></li>
                         </ul>
                     </li>
                     <li>
@@ -64,63 +68,60 @@
            </td>
             <!--------------------->
         
+
+            <!---------Блок с контентом------------>
+           <td valign="top">
+        <div>
+            <div align="left" width = "80%" border-left="40px">
+                <a href="https://github.com/Gornova/MarteEngine/blob/master/src/main/java/it/marteEngine/entity/Entity.java">
+                <font face='Courier New' size=4>StateBasedGame.java</font></a>
+                <br>
+                <br>
+                    <img src="/../res/state_based_game.jpg" align="left" hspace=5 width=120>
+                <font face='Comic Sans MS' size=4>
+                    <b>Описание:</b>
+                </font>
+                    <font face='Comic Sans MS' size=2>
+                        <br><b>org.newdawn.slick.state.StateBasedGame</b> - это класс игры, построенной на сценах (States). Она является базой и контейнером объектов <a href="World.html">World</a>. 
+                    </font>    
+                <br>        
+                <br>    
+
+        <!--Тут начинается таблица-->        
+                <table cols="2" border="1" width=100%>
+                    <caption align="left">
+                        <b>Интерфейс класса</b>
+                    </caption>
+                    <tr align="left">
+                        <th> 
+                            <font color="gray">public </font>StateBasedGame(<font color="gray">String</font> name)
+                        </th>
+                        <td>
+                            Конструктор, принимающий на вход название игры
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>     
+            </td>
+        <!--------------------->
        
-        <!---------Блок с контентом------------>
-       <td valign="top">
-        <font face = CourierNew,ComicSans color=ORANGE size=5>
-            <b>Словарь терминов</b>
-        </font>
-        
-    <!--Навигация-->    
-        <ul>
-            <li>
-                <b>С</b>
-                <ul>
-                    <li><a href="#entity">Сущность</a></li>
-                </ul>
-            </li>
-            <li>
-                <b>Х</b>
-                <ul>
-                    <li><a href="#hitbox">Хитбокс</a></li>
-                </ul>
-            </li>
-        </ul>
-        
-    <!--Собственно, термины-->    
-        <DL>
-            <DT><b><a name="entity">Сущность [entity]</a></b></DT>
-            <DD>
-                Любой игровой объект, от ворона до письменного стола. Более развёрнуто - <a href="classes/Entity.html">тут</a>. 
-            </DD>
-            
-            <br>
-            <DT><b><a name="hitbox">Хитбокс [hitbox]</a></b></DT>
-            <DD>
-                Область обнаружения столкновений, представленная, в самом простом случае, прямоугольником, и выполняющая роль логической границы сущности для системы обнаружения столкновений
-            </DD>
-            
-            <br>
-            <DT><b><a name="hitbox">Графический контекст</a></b></DT>
-            <DD>
-                Массив пикселов, создающийся последовательно операциями отрисовки. Он работает по принципу, который можно грубо назвать "отрисовал и забыл".
-            </DD>
-                      
-            <br>
-            <DT><b><a name="hitbox">Трансляция [translation]</a></b></DT>
-            <DD>
-                Смещение графического контекста на заданное расстояние
-            </DD>
-        </DL>
+        <!--Как пользоваться, примеры-->
+        <!-- ....... -->
+        <!--------------------->
+       
         </tr>
         </table>
-        
+               
+        <br>        
+        <br>
         <!---Стандартный футер--->
-        <div>
+        <div align=>
             <hr>   
             <b>OldTeaOwl</b>, 2018<br>
             <a href="https://github.com/Gornova/MarteEngine">MarteEngine</a> by <a href="https://github.com/Gornova">Gornova</a> and <a href="http://slick.ninjacave.com/">Slick2d</a> by Slick Community
         </div>
         <!----------------------->
-    </body>
-</HTML>
+    </body>        
+</HTML>        
