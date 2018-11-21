@@ -1,7 +1,15 @@
+/*общие параметры сайдбара*/
+#sidebar{
+    background-color: #FFDA88;
+    height: 470px;
+    width=140px;
+    vertical-align: top;
+}
+
 li a{
-    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    text-decoration: none; 
 }
 
 li a:hover {
-    color: saddlebrown; /* Цвет текста активного пункта */
+    color: saddlebrown;
 }
